@@ -125,13 +125,18 @@ body {
 
 /* SECTION 1 */ /* SECTION 1 */ /* SECTION 1 */ /* SECTION 1 */ /* SECTION 1 */ /* SECTION 1 */
 
+.hero-container {
+  max-width: 696px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+
 .hero {
-  background-color: #2f303a;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  
+  background-color: #2F303A;
 }
 
 .hero-header {
@@ -139,14 +144,12 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0;
-  width: 696px;
+  text-align: center;
 }
 
-.hero-service {
+.hero-btn {
   color: #ffffff;
   font-family: inherit;
   background-color: #2196f3;
@@ -161,16 +164,17 @@ body {
   border-radius: 4px;
   justify-content: center;
   margin: 30px auto;
+  margin-bottom: 0;
   width: 200px;
   height: 50px;
 }
 
-/* benefits */
+/* BENEFITS */ /* BENEFITS */ /* BENEFITS */ /* BENEFITS */ /* BENEFITS */
 
 .hidden {
   display: none;
 }
-
+/* 
 .benefits-list {
   display: flex;
 }
@@ -181,7 +185,7 @@ body {
 
 .benefits-item:last-child {
   margin-right: 0;
-}
+} */ 
 
 .benefits-header {
   color: var(--maincolor);
