@@ -1,37 +1,23 @@
 :root {
   --maincolor: #212121;
+  --secondcolor: #757575;
   --connection: #757575;
   --hover: #2196f3;
   --buttonsback: #f5f4fa;
-  --secondcolor: #757575;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.list {
-  padding: 0;
-  margin: 0;
 }
 
 body {
-  margin: 0;
-  width: 1600px;
-}
-/* colors */
-
-body {
-  background-color: #ffffff;
   color: var(--maincolor);
   font-family: Roboto, sans-serif;
 }
 
-/* Logo */
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  border: 1px solid red;
+}
+
+/* LOGO */ /* LOGO */ /* LOGO */ /* LOGO */ /* LOGO */ /* LOGO */ /* LOGO */
 
 .logo-part {
   color: #2196f3;
@@ -51,16 +37,10 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* HEADER */
+/* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */
 
-.container {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* border: 1px solid red; */
+.hat-nav > .logo {
+  display: inline-block;
 }
 
 .hat-nav {
@@ -68,23 +48,33 @@ body {
   align-items: center;
 }
 
-/* 1ST PART HEADER */
+.hat {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
-.hat-list {
+/* HEADER  1ST PART */ /* HEADER  1ST PART */ /* HEADER  1ST PART */
+
+.hat > .container {
   display: flex;
-  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.hat-nav-list {
+  display: flex;
+}
+
+.hat-nav-item {
+  margin-right: 50px;
+}
+
+.hat-nav-item:first-child {
   margin-left: 93px;
 }
 
-.hat-list .hat-item + .hat-item {
-  margin-left: 50px;
-}
-
-.hat-nav .hat-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+.hat-nav-link {
   color: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -92,29 +82,33 @@ body {
   letter-spacing: 0.02em;
 }
 
-.hat-nav .hat-link:hover,
-.hat-nav .hat-link:focus {
+.hat-nav-link:hover,
+.hat-nav-link:focus {
   color: var(--hover);
 }
 
-.hat-nav .hat-link.current {
+.hat-nav-link.current {
   color: var(--hover);
 }
 
-/* 2ND PART HEADER */
+/* HEADER 2ND PART */ /* HEADER 2ND PART */ /* HEADER 2ND PART */
 
-.auto-nav {
+.hat-address-list {
   display: flex;
-  background-color: #ffffff;
-  padding: 0;
-  margin-left: auto;
 }
 
-.auto-nav .hat-item + .hat-item {
+.hat-address-item {
   margin-left: 50px;
 }
 
-.auto-nav .hat-link {
+.hat-address-item:first-child {
+  margin-left: 0;
+}
+
+
+
+
+.hat-address-list .hat-address-link {
   color: var(--connection);
   font-weight: 500;
   font-size: 14px;
@@ -122,14 +116,14 @@ body {
   letter-spacing: 0.02em;
 }
 
-.auto-nav .hat-link:hover,
-.auto-nav .hat-link:focus {
+.hat-address-list .hat-address-link:hover,
+.hat-address-list .hat-address-link:focus {
   color: var(--hover);
 }
 
-/* INDEX */
+/* INDEX */ /* INDEX */ /* INDEX */ /* INDEX */ /* INDEX */ /* INDEX */ /* INDEX */ /* INDEX */
 
-/* SECTION 1 */
+/* SECTION 1 */ /* SECTION 1 */ /* SECTION 1 */ /* SECTION 1 */ /* SECTION 1 */ /* SECTION 1 */
 
 .hero {
   background-color: #2f303a;
